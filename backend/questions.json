@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "question": "Node.js is built on which JavaScript engine?",
+    "options": [
+      "Chakra",
+      "V8",
+      "SpiderMonkey",
+      "Rhino"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 2,
+    "question": "Which module is used to create a server in Node.js?",
+    "options": [
+      "http",
+      "fs",
+      "server",
+      "net"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 3,
+    "question": "fs.readFile() is an example of what?",
+    "options": [
+      "Synchronous function",
+      "Blocking function",
+      "Asynchronous function",
+      "Threaded function"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 4,
+    "question": "Which of the following best describes Node.js?",
+    "options": [
+      "Multi-threaded runtime",
+      "Single-threaded event-driven runtime",
+      "Browser API",
+      "Java runtime"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 5,
+    "question": "Which command initializes a Node project?",
+    "options": [
+      "node init",
+      "npm new",
+      "npm init",
+      "node project"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 6,
+    "question": "What does the event loop handle?",
+    "options": [
+      "CPU-intensive tasks",
+      "async callbacks",
+      "OS-level parallelism",
+      "Multi-threaded code scheduling"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 7,
+    "question": "Which module is used for encryption in Node.js?",
+    "options": [
+      "crypto",
+      "secure",
+      "hash",
+      "cipher"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 8,
+    "question": "What will happen if you call res.send() twice in Express?",
+    "options": [
+      "Works normally",
+      "Node automatically merges response",
+      "Throws an error: Can't set headers after they are sent.",
+      "Express ignores second call"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 9,
+    "question": "Which statement is true about middleware in Express?",
+    "options": [
+      "It must always send a response",
+      "It has 2 arguments",
+      "It can modify req and res objects",
+      "It is synchronous only"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 10,
+    "question": "Which of the following is NOT true about Promises?",
+    "options": [
+      "They can be chained",
+      "They can replace callbacks",
+      "They block the thread",
+      "They have states like pending, fulfilled, rejected"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 11,
+    "question": "What is the purpose of the Node.js cluster module?",
+    "options": [
+      "Multi-thread async execution",
+      "Allows multiple worker processes to use the same server port",
+      "Increases RAM allocation",
+      "Enables GPU execution"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 12,
+    "question": "Which database driver in Node.js uses a connection pool automatically?",
+    "options": [
+      "MongoDB native driver",
+      "mysql2",
+      "Both A & B",
+      "None"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 13,
+    "question": "What does process.nextTick() do?",
+    "options": [
+      "Pushes callback to next iteration of event loop (macrotask)",
+      "Executes callback before promise microtasks",
+      "Schedules code before any I/O events",
+      "Runs callback after setTimeout"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 14,
+    "question": "What is a worker thread used for in Node.js?",
+    "options": [
+      "Running async callbacks",
+      "Handling I/O",
+      "Running CPU-intensive JavaScript in parallel",
+      "Running OS-level tasks"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 15,
+    "question": "In production, what's the best practice for unhandled promise rejections?",
+    "options": [
+      "Ignore them",
+      "Log and continue",
+      "Crash the process and restart with a process manager",
+      "Convert all to callbacks"
+    ],
+    "correctIndex": 2
+  }
+]
