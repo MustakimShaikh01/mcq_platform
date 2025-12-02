@@ -1,10 +1,159 @@
+/* ===============================
+   Global Styles
+   =============================== */
 
-body{font-family:Inter,system-ui,Arial;background:#f5f7fb;color:#111;margin:0;padding:20px}
-.container{max-width:760px;margin:0 auto}
-.card{background:white;padding:16px;border-radius:8px;box-shadow:0 6px 18px rgba(20,30,50,.06);margin-bottom:12px}
-.hidden{display:none}
-.question{margin-bottom:14px}
-.option{display:block;padding:8px;border-radius:6px;border:1px solid #e6eef8;margin:6px 0;cursor:pointer}
-.option.selected{background:#e6f1ff}
-button{background:#0b5cff;color:white;padding:8px 12px;border:none;border-radius:6px;cursor:pointer}
-input{padding:8px;margin:6px 0;width:100%;box-sizing:border-box}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, system-ui, Arial, sans-serif;
+  background: #f4f6fa;
+  color: #111;
+  padding: 20px;
+}
+
+.container {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+/* ===============================
+   Card Component
+   =============================== */
+
+.card {
+  background: #fff;
+  padding: 18px 22px;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(20, 30, 50, 0.08);
+  margin-bottom: 16px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ===============================
+   Form Elements
+   =============================== */
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 8px 0;
+  border: 1px solid #d8e0eb;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #0b5cff;
+  box-shadow: 0 0 0 3px rgba(11, 92, 255, 0.15);
+}
+
+/* ===============================
+   Buttons
+   =============================== */
+
+button {
+  background: #0b5cff;
+  color: white;
+  padding: 10px 16px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+button:hover {
+  background: #084bcc;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* ===============================
+   Questions & Options
+   =============================== */
+
+.question {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.question div:first-child {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.option {
+  display: block;
+  color: black !important;
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #dfe7f3;
+  margin: 6px 0;
+  cursor: pointer;
+  text-align: left;
+  background: #fafcff;
+  transition: 0.25s;
+  font-size: 15px;
+}
+
+.option:hover {
+  border-color: #0b5cff;
+  background: #f1f6ff;
+}
+
+.option.selected {
+  background: #e5efff;
+  border-color: #0b5cff;
+  font-weight: 600;
+}
+
+/* ===============================
+   Correct / Wrong Answer Cards
+   =============================== */
+
+.correct {
+  background: #d9ffe0;
+  border-left: 5px solid #1faa2e;
+  padding: 14px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.wrong {
+  background: #ffe0e0;
+  border-left: 5px solid #da2c2c;
+  padding: 14px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+/* ===============================
+   Responsive
+   =============================== */
+
+@media (max-width: 600px) {
+  .card {
+    padding: 14px 16px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .option {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
