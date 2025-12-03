@@ -89,4 +89,305 @@
     "options": ["Ignore them", "Log and continue", "Crash the process and restart with a process manager", "Convert all to callbacks"],
     "correctIndex": 2
   }
+,
+  {
+    "id": 16,
+    "question": "Which method is used to import modules in Node.js (CommonJS)?",
+    "options": ["import", "require()", "include()", "load()"],
+    "correctIndex": 1
+  },
+  {
+    "id": 17,
+    "question": "Which object represents the current Node.js process?",
+    "options": ["system", "node", "process", "runtime"],
+    "correctIndex": 2
+  },
+  {
+    "id": 18,
+    "question": "Which module is used to work with file paths?",
+    "options": ["location", "url", "path", "filesystem"],
+    "correctIndex": 2
+  },
+  {
+    "id": 19,
+    "question": "What is the default scope of variables in Node.js modules?",
+    "options": ["Global", "Block", "Module", "Function"],
+    "correctIndex": 2
+  },
+  {
+    "id": 20,
+    "question": "Which function is used to create a buffer from string?",
+    "options": ["Buffer.to()", "Buffer.write()", "Buffer.from()", "Buffer.string()"],
+    "correctIndex": 2
+  },
+  {
+    "id": 21,
+    "question": "Express is built on top of which core Node.js module?",
+    "options": ["net", "tls", "http", "stream"],
+    "correctIndex": 2
+  },
+  {
+    "id": 22,
+    "question": "Which method ends an HTTP response?",
+    "options": ["res.close()", "res.end()", "res.finish()", "res.stop()"],
+    "correctIndex": 1
+  },
+  {
+    "id": 23,
+    "question": "What will console.log(typeof require) print?",
+    "options": ["object", "function", "undefined", "string"],
+    "correctIndex": 1
+  },
+  {
+    "id": 24,
+    "question": "Which Express method handles all HTTP methods?",
+    "options": ["app.http()", "app.on()", "app.use()", "app.all()"],
+    "correctIndex": 3
+  },
+  {
+    "id": 25,
+    "question": "In Node.js, streams are based on which design pattern?",
+    "options": ["Observer", "Singleton", "Decorator", "Factory"],
+    "correctIndex": 0
+  },
+  {
+    "id": 26,
+    "question": "What type of stream is process.stdin?",
+    "options": ["Writable", "Duplex", "Transform", "Readable"],
+    "correctIndex": 3
+  },
+  {
+    "id": 27,
+    "question": "What is the default port of Node.js debugger?",
+    "options": ["3000", "9229", "8080", "5858"],
+    "correctIndex": 1
+  },
+  {
+    "id": 28,
+    "question": "What does async/await simplify?",
+    "options": ["events", "sync loops", "promise handling", "threading"],
+    "correctIndex": 2
+  },
+  {
+    "id": 29,
+    "question": "Which method is used to create a child process?",
+    "options": ["spawn()", "fork()", "exec()", "All of the above"],
+    "correctIndex": 3
+  },
+  {
+    "id": 30,
+    "question": "Which Node.js module works with zipped content?",
+    "options": ["zlib", "compress", "zipper", "gzip"],
+    "correctIndex": 0
+  },
+  {
+    "id": 31,
+    "question": "What does npm stand for?",
+    "options": ["Node Program Manager", "Node Package Manager", "New Package Manager", "Network Package Manager"],
+    "correctIndex": 1
+  },
+  {
+    "id": 32,
+    "question": "Which file is mandatory in every npm package?",
+    "options": ["config.json", "node.json", "package.json", "npm.json"],
+    "correctIndex": 2
+  },
+  {
+    "id": 33,
+    "question": "Which command installs a package as a dev dependency?",
+    "options": ["npm install pkg", "npm install pkg --save", "npm install pkg -D", "npm install pkg -g"],
+    "correctIndex": 2
+  },
+  {
+    "id": 34,
+    "question": "Which flag is used to run Node.js in strict mode?",
+    "options": ["--strict", "--use_strict", "--enable_strict", "None (use 'use strict')"],
+    "correctIndex": 3
+  },
+  {
+    "id": 35,
+    "question": "Which MongoDB command shows all databases?",
+    "options": ["show collections", "db.show()", "show dbs", "display databases"],
+    "correctIndex": 2
+  },
+  {
+    "id": 36,
+    "question": "Which data format does MongoDB use internally?",
+    "options": ["XML", "YAML", "JSON", "BSON"],
+    "correctIndex": 3
+  },
+  {
+    "id": 37,
+    "question": "Which method inserts one document?",
+    "options": ["insertOne()", "insert()", "add()", "push()"],
+    "correctIndex": 0
+  },
+  {
+    "id": 38,
+    "question": "Which MongoDB operator is used for pattern matching?",
+    "options": ["$match", "$regex", "$like", "$pattern"],
+    "correctIndex": 1
+  },
+  {
+    "id": 39,
+    "question": "What does MongoDB store data in?",
+    "options": ["Tables", "Collections", "Rows", "Schemas"],
+    "correctIndex": 1
+  },
+  {
+    "id": 40,
+    "question": "Which method updates multiple documents?",
+    "options": ["update()", "updateOne()", "updateMany()", "modifyMany()"],
+    "correctIndex": 2
+  },
+  {
+    "id": 41,
+    "question": "What is the default port of MongoDB?",
+    "options": ["8000", "27017", "3306", "5432"],
+    "correctIndex": 1
+  },
+  {
+    "id": 42,
+    "question": "Which indexing type improves text search?",
+    "options": ["2dsphere index", "Compound index", "Text index", "Sparse index"],
+    "correctIndex": 2
+  },
+  {
+    "id": 43,
+    "question": "Which Mongoose function creates a model?",
+    "options": ["mongoose.table()", "mongoose.model()", "mongoose.create()", "mongoose.schema()"],
+    "correctIndex": 1
+  },
+  {
+    "id": 44,
+    "question": "What is MongoDB aggregation mainly used for?",
+    "options": ["CRUD", "Backup", "Advanced data processing", "Indexing"],
+    "correctIndex": 2
+  },
+  {
+    "id": 45,
+    "question": "Which operator is used to combine pipeline stages?",
+    "options": ["$merge", "$pipe", "$group", "$and"],
+    "correctIndex": 0
+  },
+  {
+    "id": 46,
+    "question": "Mongoose uses which pattern to map objects to database?",
+    "options": ["MVC", "OOP", "ORM/ODM", "Repository"],
+    "correctIndex": 2
+  },
+  {
+    "id": 47,
+    "question": "Which operator selects documents where a field exists?",
+    "options": ["$has", "$exist", "$exists", "$field"],
+    "correctIndex": 2
+  },
+  {
+    "id": 48,
+    "question": "What type of database is MongoDB?",
+    "options": ["Relational", "Graph", "Document-oriented NoSQL", "Columnar"],
+    "correctIndex": 2
+  },
+  {
+    "id": 49,
+    "question": "Which command starts the MongoDB shell?",
+    "options": ["mongo", "mongodb", "mongosh", "mongos"],
+    "correctIndex": 2
+  },
+  {
+    "id": 50,
+    "question": "What does $group do in MongoDB aggregation?",
+    "options": ["Group documents by field", "Sort documents", "Delete duplicates", "Merge collections"],
+    "correctIndex": 0
+  },
+  {
+    "id": 51,
+    "question": "Which Node.js method listens for unhandled errors?",
+    "options": ["process.catch()", "process.on('error')", "process.on('uncaughtException')", "error.listen()"],
+    "correctIndex": 2
+  },
+  {
+    "id": 52,
+    "question": "Which Mongo operator removes a field?",
+    "options": ["$pull", "$remove", "$unset", "$delete"],
+    "correctIndex": 2
+  },
+  {
+    "id": 53,
+    "question": "What does app.use() typically do?",
+    "options": ["Register middleware", "Start server", "Add routes", "Stop server"],
+    "correctIndex": 0
+  },
+  {
+    "id": 54,
+    "question": "Which Node.js feature avoids blocking I/O?",
+    "options": ["Threads", "Event loop", "GPU", "Signal handlers"],
+    "correctIndex": 1
+  },
+  {
+    "id": 55,
+    "question": "Which MongoDB stage sorts documents?",
+    "options": ["$order", "$sort", "$arrange", "$sequence"],
+    "correctIndex": 1
+  },
+  {
+    "id": 56,
+    "question": "Which Node.js module handles binary data?",
+    "options": ["stream", "buffer", "binary", "byte"],
+    "correctIndex": 1
+  },
+  {
+    "id": 57,
+    "question": "Which MongoDB operator checks for inequality?",
+    "options": ["$ne", "$notEqual", "$neq", "$different"],
+    "correctIndex": 0
+  },
+  {
+    "id": 58,
+    "question": "Which function is used to schedule a task in the macrotask queue?",
+    "options": ["Promise.resolve()", "process.nextTick()", "queueMicrotask()", "setTimeout()"],
+    "correctIndex": 3
+  },
+  {
+    "id": 59,
+    "question": "Which MongoDB operator is used for logical AND?",
+    "options": ["$all", "$and", "$both", "$logicAnd"],
+    "correctIndex": 1
+  },
+  {
+    "id": 60,
+    "question": "Which Node.js module handles HTTPS?",
+    "options": ["http", "tls", "https", "secure"],
+    "correctIndex": 2
+  },
+  {
+    "id": 61,
+    "question": "Which MongoDB operator limits fields in the output?",
+    "options": ["$slice", "$limit", "$project", "$select"],
+    "correctIndex": 2
+  },
+  {
+    "id": 62,
+    "question": "Which Express method handles GET requests?",
+    "options": ["app.fetch()", "app.get()", "app.request()", "app.read()"],
+    "correctIndex": 1
+  },
+  {
+    "id": 63,
+    "question": "Which command installs Express?",
+    "options": ["npm add express", "npm install express", "node install express", "express install"],
+    "correctIndex": 1
+  },
+  {
+    "id": 64,
+    "question": "Which MongoDB data type stores arrays?",
+    "options": ["Array", "List", "Sequence", "Vector"],
+    "correctIndex": 0
+  },
+  {
+    "id": 65,
+    "question": "Which Node.js function returns absolute path of a module?",
+    "options": ["require.resolve()", "module.path()", "resolve.module()", "path.resolve()"],
+    "correctIndex": 0
+  }
 ]
