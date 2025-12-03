@@ -389,5 +389,306 @@
     "question": "Which Node.js function returns absolute path of a module?",
     "options": ["require.resolve()", "module.path()", "resolve.module()", "path.resolve()"],
     "correctIndex": 0
+  },
+  {
+    "id": 66,
+    "question": "Which global object is NOT available in Node.js?",
+    "options": ["__dirname", "__filename", "window", "global"],
+    "correctIndex": 2
+  },
+  {
+    "id": 67,
+    "question": "Which method converts a buffer to a string?",
+    "options": ["toBuffer()", "decode()", "toString()", "stringify()"],
+    "correctIndex": 2
+  },
+  {
+    "id": 68,
+    "question": "Which module is used to handle environment variables in Node.js?",
+    "options": ["env", "dotenv", "config", "vars"],
+    "correctIndex": 1
+  },
+  {
+    "id": 69,
+    "question": "Which Express component handles routing?",
+    "options": ["Router()", "Controller()", "Navigator()", "RouteMap()"],
+    "correctIndex": 0
+  },
+  {
+    "id": 70,
+    "question": "Which middleware parses JSON request bodies in Express?",
+    "options": ["express.body()", "express.parse()", "express.json()", "express.req()"],
+    "correctIndex": 2
+  },
+  {
+    "id": 71,
+    "question": "Which method returns OS platform in Node.js?",
+    "options": ["os.system()", "os.type()", "os.platform()", "os.arch()"],
+    "correctIndex": 2
+  },
+  {
+    "id": 72,
+    "question": "What is the purpose of helmet middleware in Express?",
+    "options": ["Authentication", "Input validation", "Security headers", "Session management"],
+    "correctIndex": 2
+  },
+  {
+    "id": 73,
+    "question": "Which Node.js module compresses HTTP responses?",
+    "options": ["gzip", "zipper", "compression", "compress"],
+    "correctIndex": 2
+  },
+  {
+    "id": 74,
+    "question": "Which MongoDB method deletes a single document?",
+    "options": ["delete()", "removeOne()", "deleteOne()", "dropOne()"],
+    "correctIndex": 2
+  },
+  {
+    "id": 75,
+    "question": "Which MongoDB method is used to drop a collection?",
+    "options": ["deleteCollection()", "drop()", "remove()", "truncate()"],
+    "correctIndex": 1
+  },
+  {
+    "id": 76,
+    "question": "Which aggregation stage limits the number of returned documents?",
+    "options": ["$count", "$take", "$limit", "$restrict"],
+    "correctIndex": 2
+  },
+  {
+    "id": 77,
+    "question": "Which operator is used to push a value into an array in MongoDB?",
+    "options": ["$add", "$push", "$insert", "$append"],
+    "correctIndex": 1
+  },
+  {
+    "id": 78,
+    "question": "Which MongoDB index improves geospatial queries?",
+    "options": ["Hash index", "2dsphere", "GeoLinear", "Path index"],
+    "correctIndex": 1
+  },
+  {
+    "id": 79,
+    "question": "Which Node.js core module handles child processes?",
+    "options": ["cluster", "child_process", "workers", "threads"],
+    "correctIndex": 1
+  },
+  {
+    "id": 80,
+    "question": "What method does Express use to render templates?",
+    "options": ["res.render()", "res.template()", "res.view()", "res.html()"],
+    "correctIndex": 0
+  },
+  {
+    "id": 81,
+    "question": "What does res.status(404) do?",
+    "options": ["Sets HTTP status code", "Ends response", "Logs error", "Redirects client"],
+    "correctIndex": 0
+  },
+  {
+    "id": 82,
+    "question": "Which Node.js function checks if a file exists?",
+    "options": ["fs.exists()", "fs.existsSync()", "fs.check()", "path.exists()"],
+    "correctIndex": 1
+  },
+  {
+    "id": 83,
+    "question": "Which MongoDB operator returns unique values?",
+    "options": ["distinct", "unique", "$unique", "$filter"],
+    "correctIndex": 0
+  },
+  {
+    "id": 84,
+    "question": "Which method closes a MongoDB connection?",
+    "options": ["db.close()", "client.disconnect()", "client.close()", "mongo.stop()"],
+    "correctIndex": 2
+  },
+  {
+    "id": 85,
+    "question": "Which HTTP method is idempotent?",
+    "options": ["POST", "PUT", "PATCH", "OPTIONS"],
+    "correctIndex": 1
+  },
+  {
+    "id": 86,
+    "question": "Which Express middleware handles URL-encoded bodies?",
+    "options": ["bodyParser.raw()", "express.urlencoded()", "express.body()", "urlParser()"],
+    "correctIndex": 1
+  },
+  {
+    "id": 87,
+    "question": "What does cluster.fork() do?",
+    "options": ["Restart master", "Create a new worker process", "Create a thread", "Load balance ports"],
+    "correctIndex": 1
+  },
+  {
+    "id": 88,
+    "question": "Which Node.js function schedules microtasks?",
+    "options": ["Promise.resolve()", "setImmediate()", "setTimeout()", "process.nextTick()"],
+    "correctIndex": 3
+  },
+  {
+    "id": 89,
+    "question": "Which MongoDB stage merges documents from another collection?",
+    "options": ["$join", "$merge", "$lookup", "$union"],
+    "correctIndex": 1
+  },
+  {
+    "id": 90,
+    "question": "Which MongoDB stage performs JOIN-like operations?",
+    "options": ["$lookup", "$merge", "$join", "$group"],
+    "correctIndex": 0
+  },
+  {
+    "id": 91,
+    "question": "Which Node.js module is used for streaming compression?",
+    "options": ["compress", "gzip", "zlib", "zip"],
+    "correctIndex": 2
+  },
+  {
+    "id": 92,
+    "question": "Which Express method handles errors?",
+    "options": ["app.fallback()", "app.error()", "Error middleware with 4 args", "try/catch block"],
+    "correctIndex": 2
+  },
+  {
+    "id": 93,
+    "question": "How many arguments does Express error middleware take?",
+    "options": ["2", "3", "4", "5"],
+    "correctIndex": 2
+  },
+  {
+    "id": 94,
+    "question": "Which native driver method is used to start a MongoDB session?",
+    "options": ["client.startSession()", "db.session()", "mongo.session()", "client.openSession()"],
+    "correctIndex": 0
+  },
+  {
+    "id": 95,
+    "question": "What is the primary purpose of Mongoose?",
+    "options": ["Query optimization", "Schema validation & ODM", "File storage", "Authentication"],
+    "correctIndex": 1
+  },
+  {
+    "id": 96,
+    "question": "Which Node.js method listens to an event?",
+    "options": ["event.bind()", "event.on()", "event.listen()", "event.handle()"],
+    "correctIndex": 1
+  },
+  {
+    "id": 97,
+    "question": "Which module helps create secure password hashes?",
+    "options": ["crypto", "bcrypt", "hashlib", "security"],
+    "correctIndex": 1
+  },
+  {
+    "id": 98,
+    "question": "What is the default JSON limit in express.json()?",
+    "options": ["10kb", "50kb", "100kb", "1mb"],
+    "correctIndex": 0
+  },
+  {
+    "id": 99,
+    "question": "Which MongoDB operator increments a numeric field?",
+    "options": ["$plus", "$add", "$inc", "$increase"],
+    "correctIndex": 2
+  },
+  {
+    "id": 100,
+    "question": "Which command starts a Node.js REPL?",
+    "options": ["node shell", "node repl", "node", "npm start"],
+    "correctIndex": 2
+  },
+  {
+    "id": 101,
+    "question": "Where is the event loop implemented?",
+    "options": ["Node API", "V8", "libuv", "OS kernel"],
+    "correctIndex": 2
+  },
+  {
+    "id": 102,
+    "question": "Which MongoDB operator removes array elements by condition?",
+    "options": ["$remove", "$pull", "$pop", "$unset"],
+    "correctIndex": 1
+  },
+  {
+    "id": 103,
+    "question": "Which command lists installed npm packages?",
+    "options": ["npm list", "npm show", "npm modules", "npm get"],
+    "correctIndex": 0
+  },
+  {
+    "id": 104,
+    "question": "Which HTTP method is used to partially update a resource?",
+    "options": ["PUT", "POST", "PATCH", "HEAD"],
+    "correctIndex": 2
+  },
+  {
+    "id": 105,
+    "question": "What does res.locals store?",
+    "options": ["Cookies", "Temporary per-request data", "Session info", "Global variables"],
+    "correctIndex": 1
+  },
+  {
+    "id": 106,
+    "question": "MongoDB is categorized as what type of DB?",
+    "options": ["Relational", "Document NoSQL", "Wide-column", "Graph"],
+    "correctIndex": 1
+  },
+  {
+    "id": 107,
+    "question": "Which Node.js module makes DNS queries?",
+    "options": ["dns", "net", "lookup", "tcp"],
+    "correctIndex": 0
+  },
+  {
+    "id": 108,
+    "question": "Which MongoDB stage restructures documents?",
+    "options": ["$group", "$reshape", "$project", "$modify"],
+    "correctIndex": 2
+  },
+  {
+    "id": 109,
+    "question": "What does express.static() do?",
+    "options": ["Serve JSON", "Serve static files", "Start server", "Enable sessions"],
+    "correctIndex": 1
+  },
+  {
+    "id": 110,
+    "question": "Which operator filters documents in aggregation?",
+    "options": ["$filter", "$match", "$where", "$search"],
+    "correctIndex": 1
+  },
+  {
+    "id": 111,
+    "question": "Which Node.js module handles HTTPS certificates?",
+    "options": ["crypto", "tls", "https", "cert"],
+    "correctIndex": 1
+  },
+  {
+    "id": 112,
+    "question": "Which MongoDB command checks server status?",
+    "options": ["db.status()", "serverStatus()", "db.serverStatus()", "checkStatus()"],
+    "correctIndex": 2
+  },
+  {
+    "id": 113,
+    "question": "Which Express method redirects clients?",
+    "options": ["res.redirect()", "res.move()", "res.route()", "res.sendTo()"],
+    "correctIndex": 0
+  },
+  {
+    "id": 114,
+    "question": "What does setImmediate() do?",
+    "options": ["Schedules a microtask", "Executes after I/O events", "Pauses event loop", "Runs before nextTick"],
+    "correctIndex": 1
+  },
+  {
+    "id": 115,
+    "question": "What does MongoDB's $facet stage do?",
+    "options": ["Splits pipeline into multiple branches", "Sorts documents", "Creates indexes", "Validates data"],
+    "correctIndex": 0
   }
 ]
+
