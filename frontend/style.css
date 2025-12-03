@@ -1,18 +1,13 @@
-/* ===============================
-   Global Styles
-   =============================== */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* ===========================
+   GLOBAL
+=========================== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-  font-family: Inter, system-ui, Arial, sans-serif;
+  font-family: Inter, system-ui, Arial;
   background: #f4f6fa;
-  color: #111;
   padding: 20px;
+  color: #111;
 }
 
 .container {
@@ -20,140 +15,127 @@ body {
   margin: 0 auto;
 }
 
-/* ===============================
-   Card Component
-   =============================== */
-
+/* ===========================
+   CARD
+=========================== */
 .card {
-  background: #fff;
+  background: white;
   padding: 18px 22px;
   border-radius: 10px;
-  box-shadow: 0 4px 14px rgba(20, 30, 50, 0.08);
+  box-shadow: 0 4px 12px rgba(20, 30, 50, 0.1);
   margin-bottom: 16px;
 }
 
-.hidden {
-  display: none;
-}
+.hidden { display: none; }
 
-/* ===============================
-   Form Elements
-   =============================== */
-
+/* ===========================
+   INPUTS
+=========================== */
 input {
   width: 100%;
-  padding: 10px 12px;
-  margin: 8px 0;
-  border: 1px solid #d8e0eb;
+  padding: 12px;
   border-radius: 8px;
+  border: 1px solid #d6d8dc;
+  margin-bottom: 10px;
   font-size: 15px;
 }
 
 input:focus {
   outline: none;
   border-color: #0b5cff;
-  box-shadow: 0 0 0 3px rgba(11, 92, 255, 0.15);
+  box-shadow: 0px 0px 0px 3px rgba(11, 92, 255, 0.2);
 }
 
-/* ===============================
-   Buttons
-   =============================== */
-
-button {
+/* ===========================
+   BUTTONS
+=========================== */
+button:not(.option) {
   background: #0b5cff;
   color: white;
   padding: 10px 16px;
-  font-size: 15px;
-  border: none;
   border-radius: 8px;
+  border: none;
+  width: 100%;
   cursor: pointer;
   transition: 0.25s;
+  font-size: 15px;
 }
 
-button:hover {
-  background: #084bcc;
-  transform: translateY(-1px);
-}
+button:not(.option):hover { background: #084bcc; }
 
-button:active {
-  transform: scale(0.98);
-}
-
-/* ===============================
-   Questions & Options
-   =============================== */
-
+/* ===========================
+   QUESTION BLOCK
+=========================== */
 .question {
   margin-bottom: 20px;
-  padding-bottom: 10px;
-}
-
-.question div:first-child {
-  font-weight: 600;
-  margin-bottom: 8px;
 }
 
 .option {
   display: block;
-  color: black !important;
   width: 100%;
   padding: 10px 14px;
   border-radius: 8px;
   border: 1px solid #dfe7f3;
-  margin: 6px 0;
-  cursor: pointer;
-  text-align: left;
   background: #fafcff;
-  transition: 0.25s;
-  font-size: 15px;
+  margin: 6px 0;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.2s;
+  color: black;
 }
 
 .option:hover {
+  background: #eef4ff;
   border-color: #0b5cff;
-  background: #f1f6ff;
 }
 
-.option.selected {
-  background: #e5efff;
-  border-color: #0b5cff;
+/* ===========================
+   INSTANT FEEDBACK COLORS
+=========================== */
+
+/* Option Correct (GREEN) */
+.opt-correct {
+  background: #d4ffd4 !important;
+  border: 2px solid #1faa2e !important;
+  color: #093a0e !important;
   font-weight: 600;
 }
 
-/* ===============================
-   Correct / Wrong Answer Cards
-   =============================== */
+/* Option Wrong (RED) */
+.opt-wrong {
+  background: #ffd4d4 !important;
+  border: 2px solid #d62828 !important;
+  color: #5b0000 !important;
+  font-weight: 600;
+}
 
-.correct {
+/* Disable Options */
+.opt-disabled {
+  opacity: 0.7;
+  pointer-events: none;
+  cursor: default;
+}
+
+.option:disabled {
+  opacity: 0.85;
+  cursor: default;
+}
+
+/* ===========================
+   RESULT VIEW STYLING
+=========================== */
+.result-correct {
   background: #d9ffe0;
   border-left: 5px solid #1faa2e;
-  padding: 14px;
-  border-radius: 6px;
+  padding: 12px;
+  border-radius: 8px;
   margin-bottom: 12px;
 }
 
-.wrong {
+.result-wrong {
   background: #ffe0e0;
   border-left: 5px solid #da2c2c;
-  padding: 14px;
-  border-radius: 6px;
+  padding: 12px;
+  border-radius: 8px;
   margin-bottom: 12px;
-}
-
-/* ===============================
-   Responsive
-   =============================== */
-
-@media (max-width: 600px) {
-  .card {
-    padding: 14px 16px;
-  }
-
-  button {
-    width: 100%;
-  }
-
-  .option {
-    font-size: 14px;
-    padding: 10px;
-  }
 }
